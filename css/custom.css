@@ -1,0 +1,126 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+.custom-dropdown {
+  width: 240px;
+}
+
+.custom-textbox {
+  width: 240px;
+}
+
+#dialog-1,
+#dialog-2,
+#dialog-3,
+#dialog-4,
+#share-dialog {
+  display: none;
+}
+
+#share-url {
+  width: 100%;
+  -webkit-touch-callout: default !important;
+  -webkit-user-select: text !important;
+  -khtml-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+#share-url-copy-prompt {
+  display: none;
+  color: #ffa600;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 calc(25% - 1rem); /* Adjust percentage to fit your layout */
+  max-width: calc(25% - 1rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 calc(25% - 1rem); /* Adjust percentage to fit your layout */
+  max-width: calc(25% - 1rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  display: block;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover;
+}
+
+.card .label {
+  padding: 0.5rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; /* Ensure the label is centered */
+  color: black; /* Set text color to black */
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 calc(33.33% - 1rem);
+    max-width: calc(33.33% - 1rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamazon Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d9c1bb;
+            margin: 0;
+            padding-top: 100px;
+        }
+
+        header {
+            background-color: #785a38;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-heading img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #988783;
+            border-radius: 15px;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            max-height: 300px; /* Set a fixed height */
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #070707;
+        }
+
+        .text {
+            text-align: center;
+            color: #111111;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .answers li {
+            margin-bottom: 10px;
+        }
+
+        .answers li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 1px solid #9c5c18f2;
+            margin: 20px 0;
+        }
+
+        .submit-button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-button button {
+            background-color: rgb(126, 235, 126);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button button:hover {
+            background-color: #af814c;
+        }
+
+        footer {
+            background-color: #785a38;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative; /* Remove fixed position */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-heading">
+            <img src="img/glamazon.png" alt="Glamazon Logo">
+            <h1>Glamazon</h1>
+        </div>
+        <nav>
+            <a href="next-page.html">Home</a>
+            <!-- <a href="details.html#company-profile">Company Profile</a>
+            <a href="services.html">Services</a>
+            <a href="details.html#the-team">The Team</a>
+            <a href="blog.html#the-blog">The Blog</a>
+            <a href="details.html#contact-us">Contact Us</a> -->
+        </nav>
+    </header>
+
+    <h2 id="survey">Survey</h2>
+    <hr>
+    <p class="text">
+        Thank you for choosing Glamazon, your premier salon service application! We strive to provide you with the best beauty 
+        and wellness experiences, and your feedback is essential in helping us achieve this goal. 
+        By participating in this survey, you will help us understand your needs, preferences, and experiences with our app and services.
+    </p>
+    <br>
+    <p class="text">
+        This survey is designed to be quick and easy, taking just 10-15 minutes of your time. 
+        Your responses will be kept confidential and used exclusively to enhance our offerings. 
+        We encourage you to share your honest opinions and detailed insights to help us make Glamazon even better for you and other users.
+    </p>
+    <br>
+    <div class="container">
+        <h1>Glamazon Survey</h1>
+        
+        <div class="question">
+            <label>How did you hear about Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Social media (Facebook, Instagram, etc.)</li>
+                <li><input type="checkbox">Friends or family</li>
+                <li><input type="checkbox">Online advertisement</li>
+                <li><input type="checkbox">Search engine (Google, Bing, etc.)</li>
+                <li><input type="checkbox">Other (please specify)</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>Which features of Glamazon do you use most frequently? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Booking appointments</li>
+                <li><input type="checkbox">Viewing salon profiles</li>
+                <li><input type="checkbox">Checking reviews and ratings</li>
+                <li><input type="checkbox">Browsing services and prices</li>
+                <li><input type="checkbox">Chatting with salon owners</li>
+                <li><input type="checkbox">Viewing salon galleries</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>What types of salon services do you book through Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Haircuts and styling</li>
+                <li><input type="checkbox">Manicures and pedicures</li>
+                <li><input type="checkbox">Facials and skincare</li>
+                <li><input type="checkbox">Massages</li>
+                <li><input type="checkbox">Makeup services</li>
+                <li><input type="checkbox">Other (please specify)</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>What factors influence your choice of salon on Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Location</li>
+                <li><input type="checkbox">Ratings and reviews</li>
+                <li><input type="checkbox">Price</li>
+                <li><input type="checkbox">Services offered</li>
+                <li><input type="checkbox">Salon ambiance and photos</li>
+                <li><input type="checkbox">Availability of appointments</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>How satisfied are you with the following aspects of Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Ease of use</li>
+                <li><input type="checkbox">Booking process</li>
+                <li><input type="checkbox">Customer service</li>
+                <li><input type="checkbox">Variety of salons and services</li>
+                <li><input type="checkbox">Information provided about salons</li>
+                <li><input type="checkbox">Overall experience</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>What improvements would you like to see in Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">More salon options</li>
+                <li><input type="checkbox">Better customer support</li>
+                <li><input type="checkbox">Improved app performance</li>
+                <li><input type="checkbox">More detailed salon profiles</li>
+                <li><input type="checkbox">Additional payment options</li>
+                <li><input type="checkbox">Other (please specify)</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>How often do you use the following features on Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Booking appointments</li>
+                <li><input type="checkbox">Viewing salon details</li>
+                <li><input type="checkbox">Checking reviews and ratings</li>
+                <li><input type="checkbox">Browsing the gallery</li>
+                <li><input type="checkbox">Messaging salon owners</li>
+                <li><input type="checkbox">Other (please specify)</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>Which devices do you use to access Glamazon? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Smartphone</li>
+                <li><input type="checkbox">Tablet</li>
+                <li><input type="checkbox">Laptop</li>
+                <li><input type="checkbox">Desktop computer</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>How likely are you to recommend Glamazon to others? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Very likely</li>
+                <li><input type="checkbox">Likely</li>
+                <li><input type="checkbox">Neutral</li>
+                <li><input type="checkbox">Unlikely</li>
+                <li><input type="checkbox">Very unlikely</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <label>What additional services would you like Glamazon to offer? (Select all that apply)</label>
+            <ul class="answers">
+                <li><input type="checkbox">Home service options</li>
+                <li><input type="checkbox">Virtual consultations</li>
+                <li><input type="checkbox">Loyalty programs and rewards</li>
+                <li><input type="checkbox">Exclusive deals and discounts</li>
+                <li><input type="checkbox">Other (please specify)</li>
+            </ul>
+        </div>
+
+
+
+        <div class="question">
+            <label>Do you have any additional comments or suggestions for Glamazon?</label>
+            <textarea rows="4" style="width: 100%;"></textarea>
+        </div>
+        
+        <div class="submit-button">
+            <a href="next-page.html">
+                <button>Submit</button>
+            </a>
+        </div>
+        
+    </div>
+    <p class="text">
+        Thank you for taking the time to complete our survey. Your feedback is invaluable in helping us improve Glamazon for you and all our users. We appreciate your honest input and look forward to serving you better!
+    </p>
+
+
+    <footer>
+        <p>© 2024 Glamazon. All rights reserved.</p>
+    </footer>
+</body>
+</html>

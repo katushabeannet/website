@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamazon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/makeup1.jpeg" alt="Glamazon" class="background-image">
+        <div class="overlay">
+            <hr>
+            <h1>WELCOME TO..</h1>
+            <h2>GLAMAZON</h2>
+            <p>Experience world-class hair and beauty services</p>
+            <a href="next-page.html" class="see-more">SEE MORE</a>
+        </div>
+    </div>
+</body>
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+.overlay hr {
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+    margin: 0;
+}
+
+.overlay h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.overlay h2 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+}
+
+.see-more {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.see-more:hover {
+    background-color: white;
+    color: black;
+}
+
+</style>
+</html>

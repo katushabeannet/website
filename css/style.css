@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    background-color: rgb(247, 221, 183);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #a05d1f;
+    color: #fff;
+    padding: 1em 0;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  header nav ul li a.active {
+    background: #555;
+    border-radius: 5px;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about h1, .about h2 {
+    color: #333;
+  }
+  
+  .about p, .about ul {
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    background-color: #a05d1f;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+  }
+  

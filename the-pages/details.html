@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamazon - About Us & Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-heading">
+            <img src="img/glamazon.png" alt="Glamazon Logo">
+            <h1>Glamazon</h1>
+        </div>
+        <nav>
+            <a href="next-page.html">Home</a>
+            <!-- <a href="details.html#company-profile">Company Profile</a>
+            <a href="services.html">Services</a>
+            <a href="details.html#the-team">The Team</a>
+            <a href="blog.html#the-blog">The Blog</a>
+            <a href="details.html#contact-us">Contact Us</a> -->
+        </nav>
+    </header>
+    <div class="content">
+        <h2 id="company-profile">Company Profile</h2>
+        <hr>
+        <main>
+            <section class="about">
+                <h1>About Glamazon</h1>
+                <p>Welcome to Glamazon, your premier destination for all salon services. From hairstyling and haircuts to spa treatments, nails, tattoos, and piercings, we offer a wide range of services to cater to your beauty needs.</p>
+                <p>At Glamazon, we believe that everyone deserves to look and feel their best. Our platform connects you with the finest salons in your area, offering a wide range of beauty services to cater to your every need. Whether you're looking for a fresh haircut, a relaxing spa day, or a bold new tattoo, Glamazon is here to help you book the perfect appointment with ease.</p>
+                <p>Explore our curated selection of top-rated salons, discover the services they offer, and book your appointment in just a few clicks. With Glamazon, you can trust that you're in good hands, as we partner only with the best in the beauty industry.</p>
+                <p>Thank you for choosing Glamazon. We look forward to helping you shine!</p>
+                <h2>Our Mission</h2>
+                <p>Our mission is to provide a seamless and enjoyable booking experience for salon services. We aim to connect our users with the best salons in their area, offering a variety of services and ensuring the highest quality and satisfaction.</p>
+            </section>
+        </main>
+        <div class="spacer"></div>
+        <h2 id="the-team">The Team</h2>
+        <hr>
+        <div class="container">
+            <div class="row middle">
+                <div class="card">
+                    <img src="img/albert.jpg" alt="Image 1">
+                    <div class="label">Nuwarinda Albert</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <img src="img/annet.jpg" alt="Image 2">
+                    <div class="label">Katushabe Annet</div>
+                </div>
+                <div class="card">
+                    <img src="img/ketra.jpg" alt="Image 3">
+                    <div class="label">Nalunkuma Ketra</div>
+                </div>
+                <div class="card">
+                    <img src="img/tracy.jpg" alt="Image 4">
+                    <div class="label">Alinda Tracy</div>
+                </div>
+                <div class="card">
+                    <img src="img/afua.jpg" alt="Image 5">
+                    <div class="label">Nabawanga Afua</div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <h2 id="contact-us">Contact Us</h2>
+        <hr>
+        <main>
+            <section class="contact">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you! Whether you have a question, feedback, or need support, feel free to reach out to us using the contact information below or by filling out the form.</p>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Beauty Lane, Glam City, GC 45678</p>
+                    <p><strong>Phone:</strong> 0756197795</p>
+                    <p><strong>Phone:</strong>0789347312</p>
+                    <p><strong>Phone:</strong> 0768676813</p>
+                    <p><strong>Email:</strong> <a href="mailto:support@glamazon.com">support@glamazon.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@glamazon.com">info@glamazon.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@glamazon.com">contact@glamazon.com</a></p>
+                    <p><strong>Business Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="contact-form">
+                    <h2 class="centered-heading">Send Us a Message</h2>
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="centered-button">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div class="spacer"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Glamazon. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #785a38;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-heading img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .middle {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            height: 300px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 265px;
+            object-fit: cover;
+        }
+
+        .label {
+            padding: 10px;
+            background: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .spacer {
+            height: 50px;
+        }
+
+        .content {
+            width: 100%;
+            padding: 20px;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #a05d1f;
+            margin: 10px 0;
+        }
+
+        .about {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .about h1, .about h2 {
+            color: #a05d1f;
+        }
+
+        .about p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h1, .contact h2 {
+            color: #a05d1f;
+        }
+
+        .contact-info p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #a05d1f;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            text-align: center; /* Center the form heading */
+        }
+
+        .centered-heading {
+            color: #a05d1f;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start */
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px; /* Limit the maximum width */
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            padding-left: 50px;
+            margin-bottom: 15px;
+            margin-left: 50px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .centered-button {
+            background-color: #a05d1f;
+            color: #fff;
+            padding: 20px 50px;
+            /* padding-left: 20px; */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            align-self: left;
+        }
+
+        .centered-button:hover {
+            background-color: #864b18;
+        }
+
+        footer {
+            background-color: #785a38;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</body>
+</html>

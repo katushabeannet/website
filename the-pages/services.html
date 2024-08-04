@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamazon</title>
+    <style>
+        body {
+            background-color: #d9c1bb;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #785a38;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-heading img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .container {
+            flex: 1;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #988783;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        .image-card, .video-card {
+            flex: 1;
+            margin: 1rem;
+        }
+        .card img, .card video {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto;
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Adjusted to make cards wider */
+            gap: 0.1rem;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .logo-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-heading img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+            }
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(1, 1fr); /* One card per row */
+            }
+            .video-grid {
+                grid-template-columns: repeat(1, 1fr); /* One card per row */
+            }
+        }
+        footer {
+            background-color: #785a38;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo-heading">
+        <img src="img/glamazon.png" alt="Glamazon Logo">
+        <h1>Glamazon</h1>
+    </div>
+    <nav>
+        <a href="next-page.html">Home</a>
+        <!-- <a href="details.html#company-profile">Company Profile</a>
+        <a href="services.html">Services</a>
+        <a href="details.html#the-team">The Team</a>
+        <a href="blog.html#the-blog">The Blog</a>
+        <a href="details.html#contact-us">Contact Us</a> -->
+    </nav>
+</header>
+
+    <div class="content">
+        <div class="content-table flex-column">        
+            <h3>Services Offered</h3>
+            <ul>
+                <li>Hairstyling</li>
+                <li>Tattoo</li>
+                <li>Facial and Makeup</li>
+                <li>Spa</li>
+                <li>Nails</li>
+                <li>Piercings</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Hairstyling and Cuts Section</h2>
+            <hr>
+            <p>Transform your look with our expert hairstyling services at Glamazon. Whether you're aiming for a classic style, a trendy cut, or something completely unique, our skilled stylists are here to make your vision a reality. Book your appointment today and step out with confidence!</p>
+
+            <h3>Sample hairstyles</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/cut1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/cut2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/cut3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/braids1.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/braids2.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/braids3.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/braids4.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/braids2.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Tatto Section</h2>
+            <hr>
+            <p>Express yourself with our professional tattoo services at Glamazon. Our talented artists are dedicated to creating stunning and unique designs that reflect your personality and style. Whether it's your first tattoo or you're adding to your collection, we ensure a safe and comfortable experience. Book your tattoo appointment today and let your creativity shine!</p>
+
+            <h3>Sample Tattoos</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/tattoo1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/tattoo2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/tattoo3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/tattoo4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/tattoo7.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/tattoo5.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/image8.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/image9.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Spa Section </h2>
+            <hr>
+            <p>Relax and rejuvenate with our luxurious spa treatments. Book now for a blissful escape.</p>
+
+            <h3>Sample Massages</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/m1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m5.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m6.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m2.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/m1.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Nails Section </h2>
+            <hr>
+            <p >Pamper your nails with our expert manicures and pedicures. Book your appointment today!
+
+            <h3>Sample Nail stlyes</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/nail1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail5.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail6.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail5.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/nail1.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Facial and Makeup Section</h2>
+            <hr>
+            <p >Glow with our expert facials and makeup artistry. Book now for a flawless look!
+
+            <h3>Sample Makeup styles</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/makeup1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/makeup2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/makeup3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/image2.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/makeup5.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/image1.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/makeup7.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/makeup8.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">Piercings Section </h2>
+            <hr>
+            <p class="text">Get the perfect piercings with our professional and safe services. Book your appointment today!
+
+            <h3>Sample Piercings</h3>
+            <div class="container">
+                <div class="image-grid grid-container">
+                    <div class="card image-card">
+                        <img src="img/p1.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p2.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p3.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p4.jpeg" alt="Image 4">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p5.jpeg" alt="Image 1">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p6.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p7.jpeg" alt="Image 3">
+                    </div>
+                    <div class="card image-card">
+                        <img src="img/p8.jpeg" alt="Image 4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2>Sample videos</h2>
+            <hr>
+            <p>Add to your beauty
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/haircut.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/haircut2.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/haircut3.mp4" controls></video>
+                    </div>
+                </div>
+
+                
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/tattoo.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/tattoo1.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/tattoo2.mp4" controls></video>
+                    </div>
+                </div>
+
+
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/makeup.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/makeup1.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/makeup2.mp4" controls></video>
+                    </div>
+                </div>
+
+
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/nails.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/nails1.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/nails2.mp4" controls></video>
+                    </div>
+                </div>
+
+
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/spa.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/massage1.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/massage.mp4" controls></video>
+                    </div>
+                </div>
+
+
+                <div class="video-grid grid-container">
+                    <div class="card video-card">
+                        <video src="vid/piercings.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/piercings1.mp4" controls></video>
+                    </div>
+                    <div class="card video-card">
+                        <video src="vid/piercings.mp4" controls></video>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <footer>
+      <p>&copy; 2024 Glamazon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
